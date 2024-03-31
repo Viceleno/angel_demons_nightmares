@@ -1,0 +1,67 @@
+html{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
+  background-color: #1C1C1C;
+}
+
+body{
+  height: 1500px;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+  align-items: center;
+  position: fixed; /* Define o cabeçalho como fixo */
+  top: 0; /* Define a posição do topo */
+  z-index: 1000; /* Define a ordem de empilhamento */
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.nome-site{
+  font-size: small;
+  padding: 10px;
+  align-self: center;
+}
+
+nav{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: auto;  
+}
+
+ul{
+  display: flex;
+  list-style: none;
+}
+
+li{
+  padding-right: 30px;
+  color: white;
+}
+
+button{
+  background-color: black;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+button:hover{
+  color: red;
+}

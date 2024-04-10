@@ -66,6 +66,14 @@ button{
 button:hover{
   color: red;
 }
+.historia {
+  color: white;
+  text-align: center; 
+  max-width: 800px; 
+  margin: 100px auto 20px; 
+  padding: 20px; 
+}
+
 
 main{
   margin-top: 80px;

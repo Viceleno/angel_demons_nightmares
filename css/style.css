@@ -18,7 +18,7 @@ header{
   justify-content: space-between;
   font-size: 10px;
   width: 100vw;
-  height: 50px;
+  height: 60px;
   background-color: black;
   color: white;
   align-items: center;
@@ -89,15 +89,14 @@ h2{
   text-align: center;
   border: 3px solid rgba(255, 68, 0, 0.815);
   border-radius: 15px;
-  box-shadow: 3px 5px rgba(255, 68, 0, 0.37);
+  box-shadow: 3px 5px #ff8f66;
   
 }
 
 main{
-  margin-top: 80px;
+  margin-top: 70px;
 
 }
-
 
 footer{
   display: flex;
@@ -121,19 +120,131 @@ footer{
   align-items: center;
 }
 
-
-form{
-  margin: 80px auto;
+.roda_pe a {
+  text-decoration: none; /* Remove o sublinhado padrão */
+  color: #333; /* Define a cor do texto para cinza escuro */
 }
 
-@media screen and (max-width: 650px) {
+.roda_pe a:hover {
+  color: #666; /* Define a cor do texto quando passar o mouse sobre o link */
+}
+
+.roda_pe i {
+  font-size: 20px; /* Define o tamanho da fonte */
+  color: #ff8f66; /* Define a cor do ícone */
+}
+
+.roda_pe i:hover{
+  color: #ff4500;
+}
+
+.container{
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 3px 5px #ffa584;
+  margin: 80px auto;
+  background-color: orangered;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.container h2{
+  margin: 0; /* Remove a margem padrão do h2 */
+  padding: 10px 0; /* Adiciona um espaçamento interno */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  font-size: 24px; /* Define o tamanho da fonte do h2 */
+  color: #fff; /* Define a cor do texto do h2 */
+  box-shadow: none;
+}
+
+form{
+  padding: 10px;
+  width: 80%;
+  align-items: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+label{
+  font-size: 12px;
+  color: #00baff;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+input{
+  align-self: stretch;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  height: 20px;
+  align-self: center;
+  background-color: #3bff00;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 750px) {
+  .nome-site{
+    font-size: 1rem;
+   }
+}
+
+@media screen and (max-width: 495px){
+  
+  .roda_pe{
+    display: grid;
+    grid-template-areas: "rede r1 r2" "rede r3 r4";
+    gap: .4rem;
+  }
+
+  .roda_pe i{
+    font-size: 15px;
+  }
+  .rede{
+    grid-area: rede;
+  }
+
+  .r1{
+    grid-area: r1;
+    font-size: .6rem;
+  }
+  .r2{
+    grid-area: r2;
+    font-size: .6rem;
+  }
+  .r3{
+    grid-area: r3;
+    font-size: .6rem;
+  }
+  .r4{
+    grid-area: r4;
+    font-size: .6rem;
+  }
+}
+
+
+@media screen and (max-width: 665px) {
   
   header{
     height: 100px;
   }
+  
   ul{
     display: grid;
     grid-template-areas: "li1 li2" "li3 li4" "li5 li5";
+    padding-inline-start: 0;
   }
 
   .cabecalho{
@@ -163,13 +274,11 @@ form{
     justify-self: center;
   }
   form{
-      margin: 120px auto 80px auto;
+      margin: 15px auto 20px auto;
   }
   body{
     margin-top: 120px;
   }
-  
-
 }
 
   

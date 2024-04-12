@@ -35,7 +35,6 @@ header{
 }
 
 .nome-site{
-  font-size: small;
   padding: 10px;
   align-self: center;
   margin-right: auto;
@@ -110,6 +109,9 @@ footer{
   height: 50px;
   font-size: 12px;  
   box-sizing: border-box;
+  position: fixed; /* Define o rodape como fixo */
+  bottom: 0; /* Define a posição embaixo */
+  z-index: 1001; /* Define a ordem de empilhamento */
 }
 
 .roda_pe{
@@ -121,7 +123,6 @@ footer{
 
 
 form{
-  margin-top: 80px;
   margin: 80px auto;
 }
 
@@ -161,4 +162,14 @@ form{
     grid-area: li5;
     justify-self: center;
   }
+  form{
+      margin: 120px auto 80px auto;
+  }
+  body{
+    margin-top: 120px;
+  }
+  
+
 }
+
+  

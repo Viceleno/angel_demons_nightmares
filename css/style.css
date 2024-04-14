@@ -281,4 +281,8 @@ input[type="submit"] {
   }
 }
 
-  
+.center-text {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 800px; /* ou outro valor adequado para o conteúdo */
+}

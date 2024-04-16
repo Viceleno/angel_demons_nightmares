@@ -14,17 +14,29 @@ body{
 }
 
 header{
+  animation: gradient 4s ease-in-out infinite alternate ;
+  background: linear-gradient(-45deg, #992900, #651b00, #320d00, #000) no-repeat;
+  background-size: 200% 200%;
   display: flex;
   justify-content: space-between;
   font-size: 10px;
   width: 100vw;
   height: 60px;
-  background-color: black;
   color: white;
   align-items: center;
   position: fixed; /* Define o cabeçalho como fixo */
   top: 0; /* Define a posição do topo */
   z-index: 1000; /* Define a ordem de empilhamento */
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
 }
 
 .logo{
@@ -57,7 +69,7 @@ li{
 }
 
 button{
-  background-color: black;
+  background-color: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
@@ -89,7 +101,7 @@ h2{
   text-align: center;
   border: 3px solid rgba(255, 68, 0, 0.815);
   border-radius: 15px;
-  box-shadow: 3px 5px #ff8f66;
+  box-shadow: 0 0 3px 2px #ff8f66;
   
 }
 
@@ -199,6 +211,10 @@ input[type="submit"] {
   .nome-site{
     font-size: 1rem;
    }
+
+   div.container{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 495px){
@@ -232,7 +248,13 @@ input[type="submit"] {
     grid-area: r4;
     font-size: .6rem;
   }
+
+  div.container{
+    width: 90%;
+  }
 }
+  
+
 
 
 @media screen and (max-width: 665px) {

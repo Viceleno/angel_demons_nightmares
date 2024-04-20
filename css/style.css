@@ -1,16 +1,15 @@
-html{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 0;
+*{
   margin: 0;
-  background-color: #1C1C1C;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body{
-  height: 100vh;
-  color: #fff;
-  margin: 0;
-  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url('../image/imagem\ de\ fundo\ 2.png');
+  background-size: cover; /* Faz a imagem cobrir todo o elemento */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
 }
 
 header{
@@ -40,8 +39,8 @@ header{
 }
 
 .logo{
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   padding: 10px;
   border-radius: 30px;
 }

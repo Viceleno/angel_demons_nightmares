@@ -6,10 +6,18 @@
 
 body{
   font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #000
+}
+
+.fundo{
+  padding-top: 2rem;
+  margin: 60px auto 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url('../image/imagem\ de\ fundo\ 2.png');
   background-size: cover; /* Faz a imagem cobrir todo o elemento */
   background-position: center; /* Centraliza a imagem */
-  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-repeat: repeat; /* Evita repetição da imagem */
 }
 
 header{
@@ -36,6 +44,18 @@ header{
   to {
     background-position: 100% 50%;
   }
+}
+
+iframe{
+  margin: 2rem auto;
+  border: 2px solid red;
+}
+
+.youtube{
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura igual à altura da tela */
 }
 
 .logo{
@@ -82,10 +102,7 @@ button:hover{
   color: red;
 }
 .historia {
-  color: white;
-  text-align: center; 
-  max-width: 800px; 
-  margin: 75px auto 20px; 
+  color: white; 
   padding: 20px; 
   text-align: justify;
 }
@@ -94,18 +111,29 @@ p{
   text-indent: 50px;
 }
 
-h2{
+h2 {
   background-color: orangered;
-  color: black;
+  color: #fff;
   text-align: center;
   border: 3px solid rgba(255, 68, 0, 0.815);
   border-radius: 15px;
   box-shadow: 0 0 3px 2px #ff8f66;
-  
+  margin-bottom: 2rem;
+}
+
+.titulo {
+  background-color: orangered;
+  color: #fff;
+  text-align: center;
+  border: 3px solid rgba(255, 68, 0, 0.815);
+  border-radius: 15px;
+  box-shadow: 0 0 3px 2px #ff8f66;
+  margin-bottom: 2rem;
 }
 
 main{
-  margin-top: 70px;
+
+  display: block;
 
 }
 
@@ -150,10 +178,11 @@ footer{
 }
 
 .container{
+  max-width: 500px;
   width: 60%;
   border-radius: 20px;
-  box-shadow: 3px 5px #ffa584;
-  margin: 80px auto;
+  box-shadow: 0 0 3px 4px #ff8f66;
+  margin: 60px auto;
   background-color: orangered;
   display: flex;
   flex-direction: column;
@@ -298,7 +327,7 @@ input[type="submit"] {
       margin: 15px auto 20px auto;
   }
   body{
-    margin-top: 120px;
+    margin-top: 100px;
   }
 }
 

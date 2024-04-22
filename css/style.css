@@ -53,9 +53,9 @@ iframe{
 
 .youtube{
   display: flex;
+  flex-direction: column;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  height: 100vh; /* Altura igual à altura da tela */
 }
 
 .logo{
@@ -102,6 +102,9 @@ button:hover{
   color: red;
 }
 .historia {
+  display: flex;
+  flex-direction: column;
+  max-height: 1200px;
   color: white; 
   padding: 20px; 
   text-align: justify;
@@ -132,9 +135,9 @@ h2 {
 }
 
 main{
-
-  display: block;
-
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 footer{

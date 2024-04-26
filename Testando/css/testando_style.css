@@ -1,9 +1,15 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'IM Fell English', sans-serif;
+body {
+  font-family: "IM Fell English", sans-serif;
 }
+
+main {
+  background-color: #5d4037;
+  color: #ffffff;
+}
+

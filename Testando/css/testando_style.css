@@ -13,3 +13,52 @@ main {
   color: #ffffff;
 }
 
+.navbar.header {
+  background: linear-gradient(-45deg, #992900, #651b00, #320d00, #000) no-repeat;
+  background-size: 200% 200%;
+  animation: gradient 4s ease-in-out infinite alternate; /* Adicionando a animação diretamente aqui */
+}
+
+.navbar.header .navbar-toggler-icon {
+  background-color: none; /* Alterar a cor do ícone do botão de alternância */
+}
+
+@keyframes gradient {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+
+.medieval-bg {
+  background-color: #3e2723; /* Marrom escuro para parecer com madeira */
+}
+
+.form-control {
+  background-color: #FFF8DC; /* Marfim */
+  border-color: #8B4513; /* Marrom escuro */
+  color: #000; /* Preto */
+}
+
+.btn-primary {
+  background-color: #800000; /* Marrom avermelhado */
+  border-color: #800000;
+}
+
+.btn-primary:hover {
+  background-color: #8B4513;
+  border-color: #8B4513;
+}
+
+@media (min-width: 768px) {
+  .container2 {
+    max-width: 50%; /* Define a largura máxima para 50% em telas maiores que 768px */
+  }
+}

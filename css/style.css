@@ -339,3 +339,9 @@ input[type="submit"] {
   margin: 0 auto;
   max-width: 800px; /* ou outro valor adequado para o conteúdo */
 }
+
+.info {
+  color: white; /* Muda a cor do texto para branco */
+  font-size: 18px; /* Define o tamanho da fonte para 18 pixels */
+}
+

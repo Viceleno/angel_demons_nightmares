@@ -43,13 +43,15 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <nav
       class="navbar navbar-expand-lg navbar-light bg-dark navbar-dark header"
     >
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="Homef.html">
           <img
             src="/image/logo.jpg"
             alt="logo"
@@ -76,16 +78,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="Home.html">Home</a>
+              <a class="nav-link text-white" href="Home_f.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="História.html">História</a>
+              <a class="nav-link text-white" href="História_f.html">História</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="Cadastro.html">Cadastro</a>
+              <a class="nav-link text-white" href="Cadastro_f.html">Cadastro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="Jogo.html">Jogo</a>
+              <a class="nav-link text-white" href="#">Jogo</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="Personagens.html"
@@ -96,31 +98,61 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid d-flex justify-content-center align-items-center vh-100 medieval-bg">
-      <form class="container2 bg-light p-4 rounded shadow-sm">
+    <div
+      class="container-fluid d-flex justify-content-center align-items-center vh-100 medieval-bg"
+    >
+      <form id="cadastroForm" class="container2 bg-light p-4 rounded shadow-sm">
         <h2 class="text-center mb-4">Formulário de Cadastro</h2>
         <div class="mb-3">
           <label for="inputNome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="inputNome" placeholder="Digite seu nome">
+          <input
+            type="text"
+            class="form-control"
+            id="inputNome"
+            placeholder="Digite seu nome"
+          />
         </div>
         <div class="mb-3">
           <label for="inputApelido" class="form-label">Apelido</label>
-          <input type="text" class="form-control" id="inputApelido" placeholder="Digite seu apelido">
+          <input
+            type="text"
+            class="form-control"
+            id="inputApelido"
+            placeholder="Digite seu apelido"
+          />
         </div>
         <div class="mb-3">
           <label for="inputTelefone" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="inputTelefone" placeholder="Digite seu telefone">
+          <input
+            type="tel"
+            class="form-control"
+            id="inputTelefone"
+            placeholder="Digite seu telefone"
+          />
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Endereço de Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu email">
-          <div id="emailHelp" class="form-text">Nós nunca compartilharemos seus dados com ninguém.</div>
+          <label for="exampleInputEmail1" class="form-label"
+            >Endereço de Email</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Digite seu email"
+          />
+          <div id="emailHelp" class="form-text">
+            Nós nunca compartilharemos seus dados com ninguém.
+          </div>
         </div>
         <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
+      <div
+        id="dadosCadastrados"
+        class="container2 bg-light p-4 rounded shadow-sm mt-4"
+      ></div>
     </div>
-    
-    
+
     <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row align-items-center">

@@ -7,11 +7,23 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
-        .container {
-            margin-bottom: 20px; /* Adiciona espaço extra entre cada container */
-        }
-        
-    </style>
+      .container {
+          margin-bottom: 20px; /* Adiciona espaço extra entre cada container */
+      }
+      .ficha {
+          display: flex; /* Usa o layout flexbox */
+          align-items: flex-start; /* Alinha os itens no início */
+      }
+      .info {
+          margin-left: auto; /* Move a .info para a direita */
+      }
+      .imagem img {
+          max-width: 100%; /* Define a largura máxima da imagem */
+          height: auto; /* Mantém a proporção da imagem */
+          display: block; /* Remove margens extras */
+          margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+      }
+  </style>
 </head>
 <body>
     <header>
@@ -30,9 +42,6 @@
     <main class="fundo">
         <div class="container">
             <div class="ficha">
-              <div class="imagem">
-                <img src="image/marcy personagemm.png" alt="Imagem do Personagem Marcy" />
-            </div>
           <div class="info">
             <div class="nome">Marcy</div>
             <div class="atributo">Raça: Meio Demônio</div>
@@ -82,7 +91,9 @@
             </div>
           </div>
         </div>
-
+        <div class="imagem">
+          <img src="image/marcy personagemm.png" alt="Imagem do Personagem Marcy" />
+      </div>
         
       </main>
     </main>

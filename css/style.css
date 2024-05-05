@@ -345,3 +345,29 @@ input[type="submit"] {
   font-size: 18px; /* Define o tamanho da fonte para 18 pixels */
 }
 
+.imagem img {
+  max-width: 100%; /* Define a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove margens extras */
+  margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+}
+
+.imagem {
+  margin-right: 20px; /* Adiciona espaço à direita da imagem */
+  flex-shrink: 0; /* Evita que a imagem diminua para caber no contêiner */
+  width: 200px; /* Define a largura da imagem */
+}
+
+.imagem img {
+  width: 100%; /* Ajusta a largura da imagem para preencher o contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block; /* Remove margens extras */
+}
+
+
+.container-ficha {
+  display: flex;
+  justify-content: space-between; /* Alinha os itens ao final do contêiner */
+  align-items: center; /* Centraliza verticalmente os itens */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura */
+}

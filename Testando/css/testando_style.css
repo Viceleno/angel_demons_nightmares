@@ -13,9 +13,15 @@ main {
   color: #ffffff;
 }
 
-div{
+div {
   color: #000;
+  z-index: 1;
 }
+
+footer {
+  z-index: 2;
+}
+
 .navbar.header {
   background: linear-gradient(-45deg, #992900, #651b00, #320d00, #000) no-repeat;
   background-size: 200% 200%;
@@ -39,14 +45,13 @@ div{
   margin-left: auto;
 }
 
-
 .medieval-bg {
   background-color: #3e2723; /* Marrom escuro para parecer com madeira */
 }
 
 .form-control {
-  background-color: #FFF8DC; /* Marfim */
-  border-color: #8B4513; /* Marrom escuro */
+  background-color: #fff8dc; /* Marfim */
+  border-color: #8b4513; /* Marrom escuro */
   color: #000; /* Preto */
 }
 
@@ -56,8 +61,8 @@ div{
 }
 
 .btn-primary:hover {
-  background-color: #8B4513;
-  border-color: #8B4513;
+  background-color: #8b4513;
+  border-color: #8b4513;
 }
 
 @media (min-width: 768px) {
@@ -66,7 +71,24 @@ div{
   }
 }
 
-#dadosCadastrados{
+#dadosCadastrados {
   margin-left: 25px;
   font-size: 1.5rem;
+}
+
+.container-medieval {
+  background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com opacidade */
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 80%;
+  margin: auto; /* Centraliza o container */
+}
+
+.btn-medieval {
+  background-color: #8B4513; /* Marrom */
+  border-color: #8B4513; /* Marrom */
+}
+.btn-medieval:hover {
+  background-color: #A0522D; /* Marrom mais claro */
+  border-color: #A0522D; /* Marrom mais claro */
 }

@@ -50,3 +50,26 @@ document.getElementById("cadastroForm").addEventListener("submit", function(even
                       "<p>Cidade: " + cidade + "</p>" +
                       "<p>Estado: " + estado + "</p>";
 });
+
+
+document.getElementById('formFicha').addEventListener('submit', function (event) {
+  event.preventDefault(); // Impede o envio padrão do formulário
+  
+  // Obtém os valores dos campos do formulário
+  var nome = document.getElementById('nomeInput').value;
+  var raca = document.getElementById('racaInput').value;
+  var classe = document.getElementById('classeInput').value;
+  // Adicione mais campos conforme necessário
+
+  // Cria um novo documento PDF
+  var doc = new jsPDF();
+
+  // Adiciona o conteúdo ao PDF
+  doc.text('Nome: ' + nome, 10, 10);
+  doc.text('Raça: ' + raca, 10, 20);
+  doc.text('Classe: ' + classe, 10, 30);
+  // Adicione mais campos conforme necessário
+
+  // Salva o PDF e permite o download
+  doc.save('ficha_personagem.pdf');
+});

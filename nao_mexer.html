@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <img src="/image/logo.jpg" alt="logo" class="logo" />
+      <img src="Testando/img/logo.jpg" alt="logo" class="logo" />
       <h1 class="nome-site">Angels, Demons & Nightmares</h1>
       <nav class="cabecalho">
         <ul>
@@ -47,13 +47,26 @@
           <label for="sobrenome">Sobrenome: </label>
           <input type="text" name="sobrenome" placeholder="Escreva seu sobrenome" />
           <label for="email">E-mail: </label>
-          <input type="email" name="sobrenome" placeholder="Escreva seu e-mail" />
+          <input type="email" name="email" placeholder="Escreva seu e-mail" />
           <label for="apelido">Apelido: </label>
           <input type="text" name="apelido" placeholder="Escreva seu apelido" />
+          <label for="cep">CEP: </label>
+          <input type="text" id="cep" name="cep" maxlength="9" placeholder="Digite seu CEP" />
+          <label for="rua">Rua: </label>
+          <input type="text" id="rua" name="rua" placeholder="Rua" />
+          <label for="bairro">Bairro: </label>
+          <input type="text" id="bairro" name="bairro" placeholder="Bairro" />
+          <label for="cidade">Cidade: </label>
+          <input type="text" id="cidade" name="cidade" placeholder="Cidade" />
+          <label for="estado">Estado: </label>
+          <input type="text" id="estado" name="estado" placeholder="Estado" />
           <input type="submit" value="Cadastrar">
         </form>
       </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="api_cep.js"></script>
+    <script src="script.js"></script>
     <footer>
       <nav class="roda_pe">
         <p class="rede">Nossas redes sociais:</p>

@@ -59,16 +59,64 @@ document.getElementById('formFicha').addEventListener('submit', function (event)
   var nome = document.getElementById('nomeInput').value;
   var raca = document.getElementById('racaInput').value;
   var classe = document.getElementById('classeInput').value;
-  // Adicione mais campos conforme necessário
-
+  var nivel = document.getElementById('nivelInput').value;
+  var hp = document.getElementById('hpInput').value;
+  var mana = document.getElementById('manaInput').value;
+  var defesa = document.getElementById('defesaInput').value;
+  var anulacao = document.getElementById('anulacaoInput').value;
+  var deslocamento = document.getElementById('deslocamentoInput').value;
+  var forca = document.getElementById('forcaInput').value;
+  var destreza = document.getElementById('destrezaInput').value;
+  var vitalidade = document.getElementById('vitalidadeInput').value;
+  var inteligencia = document.getElementById('inteligenciaInput').value;
+  var espirito = document.getElementById('espiritoInput').value;
+  var carisma = document.getElementById('carismaInput').value;
+  var sorte = document.getElementById('sorteInput').value;
+  var inventario = document.getElementById('inventarioInput').value;
+  var habilidades = document.getElementById('habilidadesInput').value;
+  
   // Cria um novo documento PDF
   var doc = new jsPDF();
+  
+  // Define a posição inicial do texto
+  var yPos = 10;
 
   // Adiciona o conteúdo ao PDF
-  doc.text('Nome: ' + nome, 10, 10);
-  doc.text('Raça: ' + raca, 10, 20);
-  doc.text('Classe: ' + classe, 10, 30);
-  // Adicione mais campos conforme necessário
+  doc.text('Nome: ' + nome, 10, yPos);
+  yPos += 10;
+  doc.text('Raça: ' + raca, 10, yPos);
+  yPos += 10;
+  doc.text('Classe: ' + classe, 10, yPos);
+  yPos += 10;
+  doc.text('Nível: ' + nivel, 10, yPos);
+  yPos += 10;
+  doc.text('HP: ' + hp, 10, yPos);
+  yPos += 10;
+  doc.text('Mana: ' + mana, 10, yPos);
+  yPos += 10;
+  doc.text('Defesa: ' + defesa, 10, yPos);
+  yPos += 10;
+  doc.text('Anulação: ' + anulacao, 10, yPos);
+  yPos += 10;
+  doc.text('Deslocamento: ' + deslocamento, 10, yPos);
+  yPos += 10;
+  doc.text('Força: ' + forca, 10, yPos);
+  yPos += 10;
+  doc.text('Destreza: ' + destreza, 10, yPos);
+  yPos += 10;
+  doc.text('Vitalidade: ' + vitalidade, 10, yPos);
+  yPos += 10;
+  doc.text('Inteligência: ' + inteligencia, 10, yPos);
+  yPos += 10;
+  doc.text('Espírito: ' + espirito, 10, yPos);
+  yPos += 10;
+  doc.text('Carisma: ' + carisma, 10, yPos);
+  yPos += 10;
+  doc.text('Sorte: ' + sorte, 10, yPos);
+  yPos += 10;
+  doc.text('Inventário: ' + inventario, 10, yPos);
+  yPos += 10;
+  doc.text('Habilidades: ' + habilidades, 10, yPos);
 
   // Salva o PDF e permite o download
   doc.save('ficha_personagem.pdf');

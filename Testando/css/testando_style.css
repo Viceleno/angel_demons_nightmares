@@ -13,6 +13,9 @@ main {
   color: #ffffff;
 }
 
+div{
+  color: #000;
+}
 .navbar.header {
   background: linear-gradient(-45deg, #992900, #651b00, #320d00, #000) no-repeat;
   background-size: 200% 200%;
